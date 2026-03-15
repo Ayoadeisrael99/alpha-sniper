@@ -1,0 +1,12 @@
+.env
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+data/
+*.xlsx
+.vscode/
+.idea/
+notebooks/.ipynb_checkpoints/

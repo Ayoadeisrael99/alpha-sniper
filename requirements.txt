@@ -1,0 +1,24 @@
+# Core
+fastapi==0.115.*
+uvicorn[standard]==0.34.*
+pydantic==2.*
+pydantic-settings==2.*
+
+# Data & ML
+numpy<2
+pandas>=2.0
+yfinance>=0.2.40
+requests>=2.31
+beautifulsoup4>=4.12
+lxml>=5.0
+scikit-learn>=1.4
+
+# Excel export (optional, for /export endpoint)
+openpyxl>=3.1
+
+# Testing
+pytest>=8.0
+httpx>=0.27
+
+# Logging
+python-json-logger>=2.0

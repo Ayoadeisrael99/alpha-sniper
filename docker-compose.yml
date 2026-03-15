@@ -1,0 +1,22 @@
+version: "3.9"
+
+services:
+  alpha-sniper:
+    build: .
+    container_name: alpha-sniper
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    environment:
+      - LOG_LEVEL=INFO
+      - UNIVERSE=discovery
+    volumes:
+      - ./data:/app/data          # cache for scan results
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/api/v1/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 15s
