@@ -1,5 +1,7 @@
 # Alpha Sniper v2
 
+[![Watch the Demo](https://img.shields.io/badge/YouTube-Watch%20the%20Demo-red?style=for-the-badge&logo=youtube)](https://youtu.be/LGFK91Fcq1w)
+
 **ML-driven stock scanner** that identifies high-probability reversal setups using a 10-layer signal engine across 900+ equities.
 
 Built with **FastAPI · Docker · Python 3.11 · scikit-learn** — designed as a production-grade demonstration of end-to-end ML pipeline engineering.
